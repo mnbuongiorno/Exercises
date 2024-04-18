@@ -59,8 +59,39 @@ document.write(cellphone1.viewInfo() + "<br>");
 document.write(cellphone2.viewInfo() + "<br>");
 document.write(cellphone3.viewInfo() + "<br>"); */
 
-document.write(`
+/* document.write(`
     ${cellphone1.viewInfo()} <br>
     ${cellphone2.viewInfo()} <br>
     ${cellphone3.viewInfo()} <br>
-     `);
+     `); */
+
+
+
+
+
+//Add 2 high-end cellphones with extra camera, facial recognition and slow motion record video.
+
+
+class HighEndCellphone extends Cellphone {
+  constructor(color, weight, screenRes, cameraRes, ram, extraCamRes) {
+    super(color, weight, screenRes, cameraRes, ram);
+    this.extraCamRes = extraCamRes;
+  }
+  recordSlowMotion() {
+    alert("You are recording in slow motion");
+  }
+  facialRecognition() {
+    alert("Facial recognition initializing");
+  }
+  viewHighEndCellInfo() {
+    return this.viewInfo() + `Extra camera resolution: ${this.extraCamRes}`;
+  }
+}
+
+highEndCell1 = new HighEndCellphone("Red", "130g", "5.2", "4k", "12GB", "Full HD");
+highEndCell2 = new HighEndCellphone("Black", "125g", "6", "4k", "32GB", "Full HD");
+
+document.write(`
+${highEndCell1.viewHighEndCellInfo()} <br><br>
+${highEndCell2.viewHighEndCellInfo()} <br><br>
+`);
