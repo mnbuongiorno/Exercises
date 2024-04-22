@@ -1,12 +1,11 @@
-//create app with downloads, stars, weight props
+//create app with downloads, stars, size props
 //app must be able to open and close, install and uninstall with respective elses.
 
-
 /* class App {
-  constructor(downloads, stars, weight) {
+  constructor(downloads, stars, size) {
     this.downloads = downloads;
     this.stars = stars;
-    this.weight = weight;
+    this.size = size;
     this.isOpen = false;
   }
 
@@ -29,10 +28,10 @@
   }
 } */
 class App {
-  constructor(downloads, stars, weight) {
+  constructor(downloads, stars, size) {
     this.downloads = downloads;
     this.stars = stars;
-    this.weight = weight;
+    this.size = size;
     this.isOpen = false;
     this.installed = false;
   }
@@ -67,7 +66,7 @@ class App {
     return `
     Downloads: <b>${this.downloads}</b>
     Stars: <b>${this.stars}</b>
-    Weight: <b>${this.weight}</b>
+    Size: <b>${this.size}</b>
     `;
   }
 }
@@ -87,6 +86,8 @@ document.write(app1.install());
 document.write(app1.uninstall());
 document.write(app1.uninstall());
 document.write(app1.toggleApp()); */
+
+
 document.write(`
     ${app1.viewAppInfo()} <br><br>
     ${app2.viewAppInfo()} <br><br>
