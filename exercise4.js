@@ -87,7 +87,6 @@ document.write(app1.uninstall());
 document.write(app1.uninstall());
 document.write(app1.toggleApp()); */
 
-
 document.write(`
     ${app1.viewAppInfo()} <br><br>
     ${app2.viewAppInfo()} <br><br>

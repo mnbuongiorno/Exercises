@@ -10,13 +10,13 @@ let numbers = 123;
 // let result = string.indexOf("String"); search index and return index value, else return -1
 // let result = string.lastIndexOf("String"); return last index char of the string, else return -1
 
-// let result = string.padStart(6,"T"); fills the string with chars at the start 
+// let result = string.padStart(6,"T"); fills the string with chars at the start
 // let result = string.padEnd(3,"S"); fills the string with chars at end
-// let result = string.repeat(2); return repeated string equal to number 
+// let result = string.repeat(2); return repeated string equal to number
 
 // let result = string.split(" ") split the string and returns array
 // let result = string.substring(0,3);  create new string (0 init, 3 fin)
-// let result = string.toLowerCase(); 
+// let result = string.toLowerCase();
 // let result = string.toUpperCase();
 // let result = numbers.toString();
 
