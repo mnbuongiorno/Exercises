@@ -5,7 +5,7 @@
 // nombrar las clases en las que está y los profesores de cada una.
 
 const getInfo = (subject) => {
-  subjects = {
+  const subjects = {
     physics: ["Williams", "Peter", "Louis", "Cofla", "Marie"],
     programming: ["Buongiorno", "Peter", "John", "Louis"],
     logic: ["Lopez", "Peter", "John", "Louis", "Cofla", "Marie"],
@@ -25,7 +25,7 @@ if (info !== false) {
   let teacher = info[0][0];
   students = info[0];
   students.shift();
-  document.write(`The teacher of ${info[1]} is ${teacher}.
+  document.write(`The teacher of ${info[1]} is ${teacher}. <br>
     The students are: ${students}<br><br>`);
 }
 
