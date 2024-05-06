@@ -66,3 +66,15 @@ const input = document.querySelector(".test-input");
 
 // input.style
 
+// input.computedStyleMap.color = "#a22"
+
+// Classes, classList, classList methods.
+
+// add() - 
+// remove() - 
+// item() - return specified index class.
+// contains() - verify if that element have specified class.
+// replace() - 
+// toggle() - If it doesnt have the class, it is added. Else, deleted.
+
+
