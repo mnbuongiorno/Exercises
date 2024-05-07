@@ -22,9 +22,7 @@
 
 // setAttribute() - Modifica el valor de un atributo. El primer parametro es lo que queremos modificar y el segundo parametro es el nuevo valor.
 // getAttribute() - Obtiene el valor de un atributo.
-// removeAttribute() - Remueve el valor de un atributo. 
-
-
+// removeAttribute() - Remueve el valor de un atributo.
 
 // Global attributes - All HTML elements have these attributes
 
@@ -39,15 +37,13 @@
 
 //
 
-
 const testTitle = document.querySelector(".title");
 
-testTitle.setAttribute("contentEditable","true");
+testTitle.setAttribute("contentEditable", "true");
 
+testTitle.setAttribute("dir", "ltr"); //"rtl"
 
-testTitle.setAttribute("dir", "ltr") //"rtl"
-
-// Inputs attributes 
+// Inputs attributes
 
 // className - devuelve el nombre de la clase
 // value - devuelve el value
@@ -55,8 +51,8 @@ testTitle.setAttribute("dir", "ltr") //"rtl"
 // accept - acepta formatos
 // form -  specifies the form to which the input belongs.
 // minlength - minima cantidad de chars que debe tener el input
-// placeholder - 
-// required - 
+// placeholder -
+// required -
 
 const input = document.querySelector(".test-input");
 
@@ -70,11 +66,63 @@ const input = document.querySelector(".test-input");
 
 // Classes, classList, classList methods.
 
-// add() - 
-// remove() - 
-// item() - return specified index class.
-// contains() - verify if that element have specified class.
-// replace() - 
-// toggle() - If it doesnt have the class, it is added. Else, deleted.
+// add() -
+// remove() -
+// item() - return specified index classes.
+// contains() - verify if that element have specified class. boolean
+// replace() - 1st value to replace. 2nd replace.
+// toggle() - If it doesnt have the class, it is added. Else, deleted. 2nd parameter boolean to force.
 
+// Get and update elements:
+
+// textContent - return any node text.
+// innerText - return visible text of node element.
+// outerText - return html tags text including tags.
+
+// innterHTML - return html content of an element.
+// outerHTML - return HTML complete code of an element.
+
+// Create elements
+// createElements()
+// createTextNode()
+// appendChild()
+// createDocumentFragment()
+
+// Get and update child
+// firstChild - get first child node.
+// lastChild - get last child node.
+// firstElementChild - get first child element.
+// lastElementChild - get last child element.
+// childNodes - get all child elements - return NodeList != array.
+// children - get only HTML tags - return HTML Collection.
+
+
+
+/* 
+const container = document.querySelector(".container")
+
+const listElement = document.createElement("LI");
+
+const listElementText = document.createTextNode("This is child list element")
+
+listElement.appendChild(listElementText);
+
+container.appendChild(listElement)
+
+// listElement.innerHTML = "Child list element"; 
+
+console.log(listElement) */
+
+//
+
+// Child methods
+
+// appendChild()
+// replaceChild()
+// removeChild()
+// hasChildNodes()
+
+// Parents properties
+// parentElement
+// parentNode
 
