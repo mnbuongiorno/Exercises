@@ -118,11 +118,38 @@ console.log(listElement) */
 // Child methods
 
 // appendChild()
-// replaceChild()
+// replaceChild() - (replace, toReplace)
 // removeChild()
-// hasChildNodes()
+// hasChildNodes() - boolean - 
+
+const container = document.querySelector(".container");
+
+const paragraph = document.createElement("P").innerHTML = "Paragraph";
+const newH2 = document.createElement("H2");
+newH2.innerHTML = "H2 Title";
+
+lastH2 = document.querySelector(".h2");
+
+container.replaceChild(newH2,lastH2)
+
+//
+
+// container.removeChild(lastH2)
+
+
+
+
 
 // Parents properties
-// parentElement
-// parentNode
+// parentElement - select parent node of an HTML element
+// parentNode - select parent node
 
+
+// Siblings properties
+// nextSibling
+// previousSibling
+// nextElementSibling
+// previousElementSibling
+
+// Extra
+// closest - return closest ascendant element container
